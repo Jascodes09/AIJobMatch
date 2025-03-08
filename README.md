@@ -1,5 +1,3 @@
-# AIJobMatch
-
 # AI Job Recommender 🚀
 
 AI-powered job recommender that helps users find jobs based on their **skills** and **interests** using the **Adzuna Job API**. The project features a **3D animated background using Three.js** and a **TF-IDF-based ranking system** to provide the most relevant job recommendations.
