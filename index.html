@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Job Recommender 🚀</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
@@ -12,9 +13,54 @@
     <!-- 3D Animated Background -->
     <canvas id="bg"></canvas>
 
+     <!-- Navbar -->
+     <nav class="navbar">
+        <div class="nav-left">AI Job Finder</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="btn" onclick="showLogin()">Login</button>
+            <button class="btn" onclick="showSignup()">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Signup/Login Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="auth-title">Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="authenticateUser()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Dashboard (Visible After Login) -->
+    <div id="dashboard" class="hidden">
+        <h2>Welcome, <span id="user-name"></span>!</h2>
+        <button onclick="logout()">Logout</button>
+        
+        <div class="dashboard-content">
+            <div class="user-profile">
+                <h3>User Profile</h3>
+                <p>Name: <span id="profile-name"></span></p>
+                <p>Email: user@example.com</p>
+            </div>
+            <div class="settings">
+                <h3>Settings</h3>
+                <p>Update Preferences</p>
+                <button>Edit</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h1 class="title">Find Your Dream Job 🚀</h1>
-
+<br>
         <!-- Search Form -->
         <div class="search-card">
             <h2>Enter Your Skills & Interests</h2>
@@ -32,5 +78,6 @@
 
     <script src="script.js"></script>
     <script src="threejs-bg.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>
