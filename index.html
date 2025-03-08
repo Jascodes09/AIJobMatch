@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Job Recommender 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- 3D Animated Background -->
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <h1 class="title">Find Your Dream Job 🚀</h1>
+
+        <!-- Search Form -->
+        <div class="search-card">
+            <h2>Enter Your Skills & Interests</h2>
+            <input type="text" id="skills" placeholder="e.g. Python, Machine Learning">
+            <input type="text" id="interests" placeholder="e.g. Data Science, Remote Work">
+            <button onclick="getJobs()">Find Jobs</button>
+        </div>
+
+        <!-- Job Results Section -->
+        <div id="job-results" class="job-listings">
+            <h2>Job Listings</h2>
+            <div id="job-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="threejs-bg.js"></script>
+</body>
+</html>
