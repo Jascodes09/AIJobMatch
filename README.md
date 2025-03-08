@@ -47,7 +47,8 @@ AI-powered job recommender that helps users find jobs based on their **skills** 
 ```
 
 ## 🎨 UI Preview
-![Project Screenshot]("C:\Users\shaik\OneDrive\Pictures\Screenshots 1\Jobrec.png"/800x400?text=Project+Preview)
+![Preview](Jobrec.png)
+
 
 ## 🎯 Future Enhancements
 - 🔹 AI-based job recommendations using **Machine Learning**.
